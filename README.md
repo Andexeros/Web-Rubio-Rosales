@@ -37,15 +37,21 @@ Si aparece un error 404, comprobá que `vercel.json` esté en la raíz del repos
 ## 3. Cambios futuros
 
 - Textos, datos de contacto y estructura: `public/index.html`.
-- Colores, tipografías y diseño responsive: `public/assets/styles.css`.
-- Mensaje de WhatsApp y animaciones: `public/assets/main.js`.
-- Imagen de portada: `public/assets/casa-moderna.webp`.
+- Colores, tipografías, animaciones CSS y diseño responsive: `public/assets/styles.css`.
+- Mensaje de WhatsApp, galería, menú y animaciones de scroll: `public/assets/main.js`.
+- Escenas 3D (Three.js, incluido en `public/assets/vendor`, sin instalación):
+  - `public/assets/js/house.js`: modelos paramétricos de casas y etapas de obra.
+  - `public/assets/js/scene.js`: cielo, cordillera, luces y modo relevamiento (render → plano).
+  - `public/assets/js/hero3d.js`: obra en vivo de la portada y la sección "Relevamiento 3D".
+- Galería: fotos reales de referencia (Unsplash, licencia libre) en `public/assets/img/casa-*.webp`. Renders 3D de apoyo: `public/assets/img/r-*.webp`.
+
+Si el navegador no soporta WebGL, la portada y el relevamiento muestran renders estáticos en su lugar.
 
 Al guardar cambios en la rama conectada a Vercel, se genera un nuevo despliegue automáticamente.
 
 Los números de WhatsApp usan formato internacional argentino: Juan, `5492604410045`; José Luis, `5492604513113`. El formulario prepara el mensaje en WhatsApp; el visitante lo envía manualmente. No almacena consultas ni envía correos.
 
-La imagen de portada es ilustrativa y fue generada para esta web; no se presenta como una obra realizada por los profesionales. La información de la moratoria mantiene la recomendación de consultar vigencia y requisitos, sin fechas o beneficios específicos.
+Los renders 3D y la imagen de portada son ilustrativos y fueron generados para esta web; no se presenta como una obra realizada por los profesionales. La información de la moratoria mantiene la recomendación de consultar vigencia y requisitos, sin fechas o beneficios específicos.
 
 ## Vista local opcional
 
